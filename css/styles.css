@@ -104,6 +104,7 @@
 
   .ul-header{
     display: flex;
+    align-items:center ;
   }
 
   .svg-header{
@@ -190,7 +191,15 @@ fill: var(--secondary-text-color);
   letter-spacing: 0.02em;
   color:var(--third-text-color);
   text-decoration:none;
-  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  }
+
+  .header-contact:hover,
+  .header-contact:focus{
+color: var(--secondary-text-color);
   }
   
   
@@ -210,6 +219,7 @@ fill: var(--secondary-text-color);
   max-width: 1600px;
   min-height: 600px;
   margin: 0 auto;
+  background-position: center;
   }
   
   .hero-description:active{
@@ -476,7 +486,6 @@ margin-bottom: 50px;
 
   .description-second-page:focus,
   .description-second-page:hover{
-    /* border: 1px solid #EEEEEE; */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
@@ -596,21 +605,22 @@ margin-bottom: 20px;
 
 .h1-my{
   display: flex;
-  /* align-items: center;
-  text-align: center; */
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .is-hidden {
-  visibility: hidden;
-  pointer-events: none;
   position: absolute;
-  display: flex;
-  /* align-items: center;
-  text-align: center; */
-  justify-content: center;
-  margin-bottom: 20px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .a-my{
@@ -643,5 +653,9 @@ fill: var(--social-icons-color);
 .clients-icons:hover,
 .clients-icons:focus{
   fill: var(--secondary-text-color);
-  
+  border-color: var(--secondary-text-color);
+}
+
+.other-icons{
+  background: rgba(255, 255, 255, 0.1);
 }
