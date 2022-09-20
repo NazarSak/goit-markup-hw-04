@@ -82,9 +82,7 @@
   display: block;
   }
   
-  .current{
-  color: var(--secondary-text-color);
-  }
+ 
   
   
   .logo-one{
@@ -161,6 +159,9 @@ fill: var(--secondary-text-color);
     color:var(--secondary-text-color);
   }
   
+  .current{
+    color: var(--secondary-text-color);
+    }
   
   .header-mail{
     align-items:center ;
@@ -400,6 +401,7 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 50px;
+color: var(--first-text-color);
 }
 
 
@@ -630,13 +632,12 @@ border-radius:50%;
 display: flex;
 align-items: center;
 justify-content: center;
-fill: var(--social-icons-color);
+fill: var(--white-text-color);
 }
 
 .a-my:hover,
 .a-my:focus{
  background-color:var(--secondary-text-color) ;
- fill: var(--white-text-color); 
 }
 
 .clients-icons{
