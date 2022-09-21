@@ -635,6 +635,22 @@ justify-content: center;
 fill: var(--white-text-color);
 }
 
+.a-my-second{
+  width: 44px;
+  height: 44px;
+border-radius:50%;  
+display: flex;
+align-items: center;
+justify-content: center;
+fill: var(--clients-icon-color);
+}
+
+.a-my-second:hover,
+.a-my-second:focus{
+  background-color:var(--secondary-text-color) ;
+  fill: var(--white-text-color);
+}
+
 .a-my:hover,
 .a-my:focus{
  background-color:var(--secondary-text-color) ;
